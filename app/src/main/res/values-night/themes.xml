@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Therapist" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">?android:colorBackground</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">?android:colorBackground</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <!-- Customize your theme here. -->
+        <item name="android:background">?colorOnPrimary</item>
+        <item name="backgroundColor">?android:colorBackground</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:editTextBackground">@android:color/darker_gray</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_left</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+        <item name="android:navigationBarColor">@android:color/background_dark</item>
+    </style>
+</resources>

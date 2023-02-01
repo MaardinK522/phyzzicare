@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ServerUrlHandlerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="ENTER THE SERVER URL"
+        android:textSize="@dimen/mk_productions_text_on_display_size"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/activity_server_handler_server_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints="password"
+        android:background="@drawable/mk_productions_edittext_background_shape"
+        android:hint="SERVER URL"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="@dimen/mk_productions_text_on_display_size"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_server_handler_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="REGISTER URL"
+        app:icon="@drawable/baseline_checked_24"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

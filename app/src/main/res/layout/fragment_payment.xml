@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    android:scrollbarSize="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/mk_productions_total_amount_dashboard_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:id="@+id/fragment_payment_amount_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="AMOUNT: "
+                    android:paddingHorizontal="10dp"
+                    android:textSize="@dimen/mk_productions_text_on_display_size"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="$100"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/mk_productions_text_on_display_size"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragment_payment_withdrawl_button"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_payment_amount_linear_layout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                android:text="WidthDrawl"
+                android:textAlignment="textEnd"
+                android:textColor="?colorOnBackground"
+                android:textSize="@dimen/mk_productions_text_on_display_size"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/baseline_arrow_forward_ios_24"
+                app:iconTint="?colorOnBackground"
+                app:rippleColor="?colorOnBackground"
+                app:strokeColor="?colorOnBackground"
+                app:strokeWidth="2dp"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_profile_payment_history_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            tools:itemCount="5"
+            tools:listitem="@layout/payment_profile_fragment_history_item_layout" />
+    </LinearLayout>
+</ScrollView>

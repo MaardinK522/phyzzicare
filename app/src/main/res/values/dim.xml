@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mk_productions_primary_color" type="color">#0058FF</item>
+    <item name="mk_productions_text_on_display_size" type="dimen">20sp</item>
+    <item name="mk_productions_activity_padding" type="dimen">20dp</item>
+    <item name="mk_productions_toolbar_text_size" type="dimen">20sp</item>
+    <item name="mk_productions_default_radius" type="dimen">20dp</item>
+    <item name="mk_productions_animation_duration" type="integer">
+        @android:integer/config_mediumAnimTime
+    </item>
+    <item name="mk_productions_bottom_navigation_text_size" type="dimen">12sp</item>
+</resources>

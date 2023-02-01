@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/navigation_bar_home_item"
+        android:icon="@drawable/nav_bar_home_item_selector"
+        android:title="HOME"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_bar_payment_item"
+        android:icon="@drawable/nav_bar_wallet_item_selector"
+        android:title="PAYMENTS"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_bar_profile_item"
+        android:icon="@drawable/nav_bar_profile_item_selector"
+        android:title="PROFILE"
+        tools:ignore="HardcodedText" />
+</menu>

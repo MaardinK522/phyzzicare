@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:overScrollMode="never"
+    android:paddingHorizontal="10dp"
+    android:scrollbarSize="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/profile_name_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/user_profile_imageview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="User imageview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/doc_avatar_image"
+                    app:shapeAppearanceOverlay="@style/MK_PRODUCTIONS.APP.IMAGEVIEW_SHAPE_STYLE"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/fragment_profile_user_name_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:gravity="center_vertical"
+                        android:hint="Arjun Potti"
+                        android:maxLines="1"
+                        android:textSize="27sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:gravity="center_vertical"
+                        android:hint="#_DOCTOR  #_NO_PAIN_NO_GAIN"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="YOUR DETAILS"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Personal Details"
+                android:textSize="@dimen/mk_productions_text_on_display_size"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Subscriptions"
+                android:textSize="@dimen/mk_productions_text_on_display_size"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="REPORT"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Found a bug !"
+                android:textSize="@dimen/mk_productions_text_on_display_size"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="FAQ"
+                android:textSize="@dimen/mk_productions_text_on_display_size"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_light"
+                android:text="LEGAL"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Terms &amp; Conditions"
+                android:textSize="@dimen/mk_productions_text_on_display_size"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="Privacy"
+                android:textSize="@dimen/mk_productions_text_on_display_size"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="start|center_vertical"
+            android:padding="10sp"
+            android:text="DELETE PROFILE"
+            android:textColor="#A8A8A8"
+            android:textSize="20sp"
+            app:icon="@drawable/baseline_heart_broken_24"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:iconTint="#A8A8A8"
+            app:rippleColor="#A8A8A8"
+            app:strokeColor="#A8A8A8"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="start|center_vertical"
+            android:padding="10dp"
+            android:text="LOGOUT"
+            android:textColor="#FB8181"
+            android:textSize="20sp"
+            app:icon="@drawable/baseline_logout_24"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:iconTint="#FB8181"
+            app:rippleColor="#FB8181"
+            app:strokeColor="#FB8181"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>

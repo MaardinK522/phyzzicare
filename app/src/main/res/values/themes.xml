@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Therapist" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        // Background color
+        <!-- Status bar color. -->
+        // making to changing according to theme
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        // auto animation stuff
+        <item name="android:windowContentTransitions">true</item>
+        // changing status bar color
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:editTextBackground">?android:colorBackground</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_left</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+        <item name="fontFamily">@font/open_sans_regular</item>
+        <item name="android:navigationBarColor">@android:color/background_light</item>
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="q">true</item>
+    </style>
+
+    <style name="MK_PRODUCTIONS.APP.IMAGEVIEW_SHAPE_STYLE" parent="">
+        <item name="cornerSize">10dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="iconSize">17dp</item>
+    </style>
+
+    <style name="MK_PRODUCTIONS.APP.BOTTOM_NAVIGATION_ACTIVE_STYLE" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/mk_productions_bottom_navigation_text_size</item>
+        <item name="fontFamily">@font/open_sans_bold</item>
+    </style>
+
+    <style name="MK_PRODUCTIONS.APP.BOTTOM_NAVIGATION_UN_ACTIVE_STYLE" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/mk_productions_bottom_navigation_text_size</item>
+    </style>
+
+</resources>

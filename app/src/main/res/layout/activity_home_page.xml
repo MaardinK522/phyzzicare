@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomePageActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/home_activity_tool_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="10dp"
+        android:transitionName="@string/mk_productions_doctor_text_transition_name"
+        app:titleMarginStart="20dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/doc_avatar_image"
+            app:shapeAppearance="@style/MK_PRODUCTIONS.APP.IMAGEVIEW_SHAPE_STYLE" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Mr./Mrs. Doctor Surname"
+            android:textSize="@dimen/mk_productions_text_on_display_size"
+            tools:ignore="HardcodedText" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/activity_home_page_toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/home_activity_tool_action_bar" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/home_activity_fragment_view_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/home_activity_bottom_navigation_bar"
+        android:layout_below="@id/activity_home_page_toolbar_divider"
+        android:paddingTop="10dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_activity_bottom_navigation_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="?colorBackgroundFloating"
+        app:itemIconSize="20dp"
+        app:itemIconTint="?colorPrimary"
+        app:itemTextAppearanceActive="@style/MK_PRODUCTIONS.APP.BOTTOM_NAVIGATION_ACTIVE_STYLE"
+        app:itemTextAppearanceInactive="@style/MK_PRODUCTIONS.APP.BOTTOM_NAVIGATION_UN_ACTIVE_STYLE"
+        app:menu="@menu/home_activity_bottom_nav_menu" />
+</RelativeLayout>
