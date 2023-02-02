@@ -35,8 +35,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:hint="AMOUNT: "
                     android:paddingHorizontal="10dp"
+                    android:text="AMOUNT: "
                     android:textSize="@dimen/mk_productions_text_on_display_size"
                     tools:ignore="HardcodedText" />
 

@@ -53,6 +53,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="?colorBackgroundFloating"
+        app:itemBackground="@android:color/transparent"
         app:itemIconSize="20dp"
         app:itemIconTint="?colorPrimary"
         app:itemTextAppearanceActive="@style/MK_PRODUCTIONS.APP.BOTTOM_NAVIGATION_ACTIVE_STYLE"

@@ -7,14 +7,16 @@ import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.mkproduction.therapist.R
 import com.mkproduction.therapist.adapters.FragmentViewPagerStateAdapter
 import com.mkproduction.therapist.fragments.HomeFragment
+import com.mkproduction.therapist.fragments.MedicineFragment
 import com.mkproduction.therapist.fragments.PaymentFragment
-import com.mkproduction.therapist.fragments.ProfileFragment
 
 class HomePageActivity : AppCompatActivity() {
+    private lateinit var mToolbar: MaterialToolbar
     private lateinit var mBottomNavigationBar: BottomNavigationView
     private lateinit var mFragmentViewPager2: ViewPager2
     private var doublePressed = false
@@ -42,18 +44,21 @@ class HomePageActivity : AppCompatActivity() {
         mFragmentViewPager2.isUserInputEnabled = false
         mFragmentViewPager2.adapter = FragmentViewPagerStateAdapter(
             this@HomePageActivity
-        ).addFragment(HomeFragment(), PaymentFragment(), ProfileFragment())
+        ).addFragment(HomeFragment(), PaymentFragment(), MedicineFragment())
         mBottomNavigationBar.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_bar_home_item -> mFragmentViewPager2.currentItem = 0
                 R.id.navigation_bar_payment_item -> mFragmentViewPager2.currentItem = 1
-                R.id.navigation_bar_profile_item -> mFragmentViewPager2.currentItem = 2
+                R.id.navigation_bar_profile_item -> {
+                    mFragmentViewPager2.currentItem = 2
+                }
             }
             true
         }
     }
 
     private fun findViews() {
+        mToolbar = findViewById(R.id.home_activity_tool_action_bar)
         mBottomNavigationBar = findViewById(R.id.home_activity_bottom_navigation_bar)
         mFragmentViewPager2 = findViewById(R.id.home_activity_fragment_view_pager2)
     }

@@ -13,7 +13,7 @@
         tools:ignore="HardcodedText" />
     <item
         android:id="@+id/navigation_bar_profile_item"
-        android:icon="@drawable/nav_bar_profile_item_selector"
-        android:title="PROFILE"
+        android:icon="@drawable/nav_bar_medicine_selector"
+        android:title="MEDICINES"
         tools:ignore="HardcodedText" />
 </menu>
